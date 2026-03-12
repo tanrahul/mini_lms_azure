@@ -1,0 +1,42 @@
+<div class="main">
+  <div class="form-container">
+    <h2>Training Needs Assessment</h2>
+
+    <form action="http://localhost:7071/api/submitTNA" method="post">
+      <label>Employee Name</label>
+      <input type="text" name="employee_name" />
+
+      <label>Department</label>
+      <input type="text" name="department" />
+
+      <label>Skill Gap</label>
+      <input type="text" name="skill_gap" />
+
+      <label>Training Area</label>
+      <select name="training_area">
+        <option>Data Analytics</option>
+        <option>Cloud Computing</option>
+        <option>AI</option>
+      </select>
+
+      <label>Experience Level</label>
+      <select name="experience_level">
+        <option>Beginner</option>
+        <option>Intermediate</option>
+        <option>Advanced</option>
+      </select>
+
+      <label>Training Mode</label>
+      <select name="training_mode">
+        <option>Self Paced</option>
+        <option>Instructor Led</option>
+        <option>Virtual</option>
+      </select>
+
+      <label>Comments</label>
+      <textarea name="comments"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>

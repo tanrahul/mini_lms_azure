@@ -1,0 +1,171 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>LMS Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo">
+        <h2>Enterprise Learning Portal</h2>
+      </div>
+
+      <div class="user-info">
+        <span>Welcome, Rahul</span>
+        <a href="index.html">Logout</a>
+      </div>
+    </header>
+
+    <div class="container">
+      <!-- Sidebar Navigation -->
+
+      <div class="sidebar">
+
+        <h2>Mini LMS</h2>
+
+        <ul>
+
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="tna.html">Training Needs</a></li>
+        <li><a href="http://localhost:7071/api/getTNAAnalytics">Analytics</a></li>
+
+        </ul>
+
+      </div>
+
+      <!-- Main Dashboard Content -->
+
+      <main class="main">
+        <h1>Learning Dashboard</h1>
+        <div style="margin-top: 30px">
+          <p>
+            Welcome to your learning dashboard! Here you can track your course
+            progress, view upcoming training sessions, and access personalized
+            learning recommendations based on your interests and goals.
+          </p>
+        <!-- Dashboard Statistics -->
+
+        <section class="stats">
+          <div class="card">
+            <h3>Courses Enrolled</h3>
+
+            <p class="stat-number">6</p>
+          </div>
+
+          <div class="card">
+            <h3>Courses Completed</h3>
+
+            <p class="stat-number">2</p>
+          </div>
+
+          <div class="card">
+            <h3>Average Score</h3>
+
+            <p class="stat-number">82%</p>
+          </div>
+
+          <div class="card">
+            <h3>Learning Hours</h3>
+
+            <p class="stat-number">14</p>
+          </div>
+        </section>
+
+        <!-- Course Progress Section -->
+
+        <section class="progress-section">
+          <h2>Your Course Progress</h2>
+
+          <div class="progress-card">
+            <h3>Azure Fundamentals</h3>
+
+            <div class="progress">
+              <div class="progress-bar" style="width: 40%"></div>
+            </div>
+
+            <p>40% Completed</p>
+
+            <a href="player.html" class="btn">Continue Learning</a>
+          </div>
+
+          <div class="progress-card">
+            <h3>Python for Beginners</h3>
+
+            <div class="progress">
+              <div class="progress-bar" style="width: 20%"></div>
+            </div>
+
+            <p>20% Completed</p>
+
+            <a href="player.html" class="btn">Continue Learning</a>
+          </div>
+
+          <div class="progress-card">
+            <h3>Data Analytics with Excel</h3>
+
+            <div class="progress">
+              <div class="progress-bar" style="width: 60%"></div>
+            </div>
+
+            <p>60% Completed</p>
+
+            <a href="player.html" class="btn">Continue Learning</a>
+          </div>
+        </section>
+
+        <!-- Upcoming Training -->
+
+        <section class="training-section">
+          <h2>Upcoming Training</h2>
+
+          <table class="training-table">
+            <tr>
+              <th>Course</th>
+              <th>Date</th>
+              <th>Mode</th>
+            </tr>
+
+            <tr>
+              <td>Azure AI Fundamentals</td>
+              <td>12 March 2026</td>
+              <td>Virtual</td>
+            </tr>
+
+            <tr>
+              <td>Prompt Engineering Workshop</td>
+              <td>18 March 2026</td>
+              <td>Instructor Led</td>
+            </tr>
+
+            <tr>
+              <td>Data Analytics Bootcamp</td>
+              <td>25 March 2026</td>
+              <td>Hybrid</td>
+            </tr>
+          </table>
+        </section>
+
+        <!-- Notifications -->
+
+        <section class="notification-section">
+          <h2>Notifications</h2>
+
+          <ul>
+            <li>New course "AI for Business Leaders" is available.</li>
+
+            <li>Your TNA submission has been received.</li>
+
+            <li>You completed 60% of Data Analytics course.</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

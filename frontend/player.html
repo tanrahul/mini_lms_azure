@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Course Player</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h2>Enterprise Learning Portal</h2>
+    </header>
+
+    <div class="container">
+      <div class="sidebar">
+        <h2>Mini LMS</h2>
+
+        <ul>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="tna.html">Training Needs</a></li>
+          <li>
+            <a href="http://localhost:7071/api/getTNAAnalytics">Analytics</a>
+          </li>
+        </ul>
+      </div>
+
+      <main class="main">
+        <h1>Azure Fundamentals</h1>
+
+        <div class="video-section">
+          <video width="700" controls>
+            <source src="lesson1.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <h3>Course Progress</h3>
+
+        <div class="progress">
+          <div class="progress-bar" style="width: 40%"></div>
+        </div>
+
+        <p>40% Completed</p>
+
+        <button>Previous Lesson</button>
+        <button>Next Lesson</button>
+
+        <h3>Course Modules</h3>
+
+        <ul class="modules">
+          <li>Introduction to Cloud</li>
+          <li>Azure Core Services</li>
+          <li>Azure Compute</li>
+          <li>Azure Storage</li>
+        </ul>
+      </main>
+    </div>
+  </body>
+</html>
