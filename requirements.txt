@@ -1,4 +1,3 @@
-azure-functions
 flask
 pyodbc
 gunicorn
