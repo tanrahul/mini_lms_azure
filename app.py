@@ -3,7 +3,7 @@ import pyodbc
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/login", methods=["POST"])
 def login():
     return render_template("index.html")
 
