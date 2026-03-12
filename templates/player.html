@@ -16,11 +16,11 @@
         <h2>Mini LMS</h2>
 
         <ul>
-          <li><a href="/dashboard.html">Dashboard</a></li>
-          <li><a href="/courses.html">Courses</a></li>
-          <li><a href="/tna.html">Training Needs</a></li>
+          <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+          <li><a href="{{ url_for('courses') }}">Courses</a></li>
+          <li><a href="{{ url_for('tna') }}">Training Needs</a></li>
           <li>
-            <a href="/analytics.html">Analytics</a>
+            <a href="{{ url_for('analytics') }}">Analytics</a>
           </li>
         </ul>
       </div>
